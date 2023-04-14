@@ -15,7 +15,13 @@ import com.link.composecourse.ui.theme.ComposeCourseTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
+            Greeting(name = "Mustapa")
+        }
+
+
+        /*setContent {
             ComposeCourseTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
@@ -25,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     Greeting("Android")
                 }
             }
-        }
+        }*/
     }
 }
 
@@ -40,7 +46,5 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    ComposeCourseTheme {
-        Greeting("Android")
-    }
+    Greeting("haha notworking")
 }
