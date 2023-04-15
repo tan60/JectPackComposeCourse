@@ -78,19 +78,12 @@ import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
 
-    private var i = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            var text by remember {
-                mutableStateOf("")
-            }
             ComposeCourseTheme {
-                LaunchedEffect(key1 = text) {
-                    delay(1000L)
-                    println("The text is $text")
-                }
+                HomeScreen()
             }
         }
     }
