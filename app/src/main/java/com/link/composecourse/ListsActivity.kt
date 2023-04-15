@@ -24,7 +24,7 @@ class ListsActivity : ComponentActivity() {
             //하단에 adapter 마냥 UI와 연결 해주면 리스트 UI 쉽게 그릴 수 있다.
             LazyColumn {
                 itemsIndexed(
-                    listOf("This", "is", "Jetpeck", "Compose")
+                    listOf("Data1", "Data2", "Data3", "Data4")
                 ) { index, string ->
                     Text(
                         text = string,
